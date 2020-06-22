@@ -1,7 +1,0 @@
-<div>
-    <ul>
-        <% for (var i in notes) { %>
-            <li><%= notes[i].title %></li>
-        <% } %>
-    </ul>
-</div>
