@@ -1,0 +1,6 @@
+<h3 class="mt-15"><%= title %></h3>
+<ul class="userNotes">
+    <% for (var i in notes) {%>
+        <li class="list-group-item"><a href="/notes/<%= notes[i]._id %>"><%= notes[i].title %></a></li>
+    <%}%>
+</ul>

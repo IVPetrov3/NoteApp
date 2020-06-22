@@ -1,0 +1,18 @@
+<div class="text-left mt-15">
+    <h3>Lets create your note!</h3>
+</div>
+<form method="POST" action="/notes/create">
+    <div id="form-group">
+        <label>Title:</label><input class="form-control" name="title" type="text" />
+    </div>
+
+    <div id="form-group">
+            <label>Subject:</label><input class="form-control" name="subject" type="text" />
+    </div>
+
+    <div id="form-group">
+            <label>Text:</label><textarea rows="10" class="form-control" name="text" type="text"></textarea>
+    </div>
+    <br>
+    <input class="btn-sbmt" type="submit" value="Submit" />
+</form>

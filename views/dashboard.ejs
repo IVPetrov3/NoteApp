@@ -1,0 +1,19 @@
+<p class="lead mt-15">Welcome <%= name %></p>
+<p>Your notes:</p>
+
+    <div class="XL-3">
+        <ul class="userNotes">
+            <% for (var i in notes) {%>
+                <% if (user.id==notes[i].author) { %>
+                    <li class="list-group-item"><a href="/notes/<%= notes[i]._id %>"><%= notes[i].title %></a></li>
+                <%}%>
+            <%}%>
+        </ul>
+    </div>
+
+<div>
+    <a href="/notes/create" class="btn-secondary btnCreate">Create note <i class="fa fa-plus"></i></a>
+    <a href="/users/logout" class="btn-lgout">Logout</a>
+</div>
+
+ 

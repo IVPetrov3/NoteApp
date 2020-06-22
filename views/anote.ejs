@@ -1,0 +1,14 @@
+<h1 class="mt-15"><%= notes.title %></h1>
+<h5>Subject: <%= notes.subject %></h5>
+<h5>Writtern by: <%= author %></h5>
+<p class="txtNote"><%= notes.text %></p>
+<p class="dateP">Created on: <%= notes.date %></p>
+<hr>
+<% if(user) { %>
+    <% if (user.id==notes.author) { %>
+        <div class="mb-10">
+            <a class="editbtn" href="/notes/edit/<%=notes._id%>">Edit</a>
+            <a class="editbtn delete-note" href="#", data-id=<%= notes._id %>>Delete</a>
+        </div>
+    <% } %>
+<% } %>
